@@ -7,10 +7,9 @@ REST API -> JSON
 
 3. POST /users -> Create a new user
 
-4. PUT /users/1 -> Update the user with id 1
+4. PATCH /users/1 -> Partially update the user with id 1
 
-5. PATCH /users/1 -> Partially update the user with id 1
+5. DELETE /users/1 -> Delete the user with id 1
 
-6. DELETE /users/1 -> Delete the user with id 1
-
+For variable dynamic parameter use ':'
 POSTMAN is a utility tool for api testing and documentation

@@ -18,10 +18,11 @@ fs.writeFile("./test.txt",data,(err)=>{});
 // ------------------ READ OPERATION ---------------------
 // synchronous file reading
 const resSync= fs.readFileSync("./contact.txt","utf-8");
-console.log(res);
+console.log(resSync);
 
 // asynchronous file reading
-const resAsycn= fs.readFile("./contact.txt","utf-8",(err,res)=>{
+// asynchronous doesn't return anything it is of void type
+fs.readFile("./contact.txt","utf-8",(err,res)=>{
     if(err){
         console.log("error");
     }

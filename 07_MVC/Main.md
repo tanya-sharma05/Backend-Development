@@ -1,4 +1,4 @@
-# Model View Controller Architecture
+# Model View Controller (MVC Pattern) Architecture
 
 
 ## How Everything Connects
@@ -12,10 +12,10 @@ CLIENT REQUEST
 │                                                             │
 │  ┌──────────────────────────────────────────────────────┐  │
 │  │         GLOBAL MIDDLEWARES (Applied First)           │  │
-      │  │  • express.json() - Parse JSON body                  │  │
-      │  │  • express.urlencoded() - Parse form data            │  │
-      │  │  • cors() - Handle cross-origin requests             │  │
-      │  │  • morgan() - Logging                                │  │
+│  │  • express.json() - Parse JSON body                  │  │
+│  │  • express.urlencoded() - Parse form data            │  │
+│  │  • cors() - Handle cross-origin requests             │  │
+│  │  • morgan() - Logging                                │  │
 │  └──────────────────────────────────────────────────────┘  │
 │                          ↓                                   │
 │  ┌──────────────────────────────────────────────────────┐  │

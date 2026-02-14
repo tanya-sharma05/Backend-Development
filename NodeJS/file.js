@@ -47,7 +47,7 @@ Once the async operation completes, its callback is placed in the event queue an
 
 // Blocking 
 console.log("1");
-const readS= fs.readFileSync("./contact.txt","utf-8");
+const read= fs.readFileSync("./contact.txt","utf-8");
 console.log(read);
 console.log("2");
 console.log("3");
@@ -57,7 +57,7 @@ console.log("Hello");
 
 // Non Blocking
 console.log("1");
-const read= fs.readFile("./contact.txt","utf-8",(err,res)=>{
+fs.readFile("./contact.txt","utf-8",(err,res)=>{
     if(err) console.log("error");
     else console.log(res);
 });

@@ -36,6 +36,15 @@ fs.readFile("./contact.txt","utf-8",(err,res)=>{
 console.log(fs.statSync("./test.txt"));
 fs.mkdirSync("my-docs/a",{recursive:true});
 
+/*
+Node.js is a runtime environment that allows JavaScript to run outside the browser. 
+It uses a single-threaded event loop with non-blocking I/O.
+When a client sends a request, it is first handled by the main JavaScript thread.
+If the operation is synchronous (blocking), it runs on the main thread and blocks the event loop. 
+If the operation is asynchronous (non-blocking), it is delegated to the OS or libuv’s thread pool.
+Once the async operation completes, its callback is placed in the event queue and executed by the event loop when the call stack is free.
+*/
+
 // Blocking 
 console.log("1");
 const readS= fs.readFileSync("./contact.txt","utf-8");

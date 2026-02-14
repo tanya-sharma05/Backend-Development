@@ -61,3 +61,7 @@ REST API is like **online food delivery apps** 🍔📱
 
 ### 🔥 One-liner Difference (Interview Gold)
 > **"All REST APIs are APIs, but not all APIs are REST APIs."**
+
+## ✅ How can we create an API?
+
+We can create an API by defining endpoints, choosing HTTP methods, handling requests and responses, and exposing them over a server using a backend framework.

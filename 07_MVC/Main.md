@@ -1,6 +1,8 @@
-# How Everything Connects
+# Model View Controller Architecture
 
-## Request Flow Architecture
+
+## How Everything Connects
+### Request Flow Architecture
 
 ```
 CLIENT REQUEST
@@ -10,10 +12,10 @@ CLIENT REQUEST
 │                                                             │
 │  ┌──────────────────────────────────────────────────────┐  │
 │  │         GLOBAL MIDDLEWARES (Applied First)           │  │
-│  │  • express.json() - Parse JSON body                  │  │
-│  │  • express.urlencoded() - Parse form data            │  │
-│  │  • cors() - Handle cross-origin requests             │  │
-│  │  • morgan() - Logging                                │  │
+      │  │  • express.json() - Parse JSON body                  │  │
+      │  │  • express.urlencoded() - Parse form data            │  │
+      │  │  • cors() - Handle cross-origin requests             │  │
+      │  │  • morgan() - Logging                                │  │
 │  └──────────────────────────────────────────────────────┘  │
 │                          ↓                                   │
 │  ┌──────────────────────────────────────────────────────┐  │
